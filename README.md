@@ -1,5 +1,3 @@
-# :warning: DEPRECATED and UNMAINTAINED
-
 This library is deprecated and will no longer be maintained or updated.
 
 Instead, it is recommended to use:
