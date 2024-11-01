@@ -20,7 +20,7 @@ jobs:
           echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
       - name: 'Publish'
         run: |
-          npx lerna publish from-package --no-verify-access --yes --force-publish
+          npx lerna publish from-package  --yes --no-verify-access --force-publish
       # - name: Create a new GitHub release
       #   run: |
       #     echo ${{ secrets.TOKEN_GITHUB }} > nothing.md
