@@ -9,7 +9,7 @@
     "coveralls": "lerna run coveralls",
     "lint": "eslint '**/*.js'",
     "prettier": "prettier '**/*.js' '**/*.md' '**/*.ts' --write",
-    "release": "lerna publish from-package",
+    "release": "lerna publish from-package  --yes --no-verify-access --force-publish",
     "clean": "lerna run clean && lerna clean && rimraf ./node_modules"
   },
   "devDependencies": {
