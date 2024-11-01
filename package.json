@@ -67,8 +67,8 @@
     }
   },
   "dependencies": {
-    "@react-keycloak/core": "file:packages/core",
-    "@react-keycloak/ssr": "file:packages/ssr",
-    "@react-keycloak/web": "file:packages/web"
+    "easy-react-keycloak/core": "file:packages/core",
+    "easy-react-keycloak/ssr": "file:packages/ssr",
+    "easy-react-keycloak/web": "file:packages/web"
   }
 }

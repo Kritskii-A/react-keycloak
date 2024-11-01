@@ -83,6 +83,11 @@ export interface AuthClient {
    *          still valid, or if the token is no longer valid.
    */
   updateToken(minValidity: number): Promise<boolean>
+
+  /**
+   * Exchange token for ID token
+   */
+  idTokenExchange(token: string, clientId: string, audience: string): Promise<string>
 }
 
 /**

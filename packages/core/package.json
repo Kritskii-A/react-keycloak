@@ -1,13 +1,16 @@
 {
-  "name": "@react-keycloak/core",
+  "name": "@easy-react-keycloak/core",
   "version": "3.2.0",
   "license": "MIT",
   "description": "React bindings for Keycloak javascript adapter (core)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/react-keycloak/react-keycloak.git"
+    "url": "git+https://github.com/Kritskii-A/react-keycloak.git"
   },
-  "author": "Mattia Panzeri <mattia.panzeri93@gmail.com>",
+   "author": "Aleksandr Kritskii <kritskii-a@bk.ru>",
+  "contributors": [
+    "Mattia Panzeri <mattia.panzeri93@gmail.com>"
+  ],
   "bugs": {
     "url": "https://github.com/react-keycloak/react-keycloak/issues"
   },
@@ -27,10 +30,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "funding": {
-    "type": "patreon",
-    "url": "https://www.patreon.com/reactkeycloak"
-  },
+  
   "scripts": {
     "clean": "rimraf lib lib-commonjs",
     "prebuild": "npm run clean",

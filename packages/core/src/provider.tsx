@@ -58,14 +58,19 @@ export type AuthProviderProps<T extends AuthClient> = {
    * @param {AuthClientTokens} tokens The current AuthClient tokens set.
    */
   onTokens?: (tokens: AuthClientTokens) => void
+
+  tokenExchangeParams?: {
+    clientId: string;
+    audience: string;
+  };
 }
 
 type AuthProviderState = {
   initialized: boolean
-
   isAuthenticated: boolean
-
   isLoading: boolean
+  token?: string;
+  exchangedToken?: string;
 }
 
 /**
@@ -87,6 +92,8 @@ export function createAuthProvider<T extends AuthClient>(
     initialized: false,
     isAuthenticated: false,
     isLoading: true,
+    token: undefined,
+    exchangedToken: undefined,
   }
 
   return class KeycloakProvider extends React.PureComponent<
@@ -143,14 +150,39 @@ export function createAuthProvider<T extends AuthClient>(
         .catch(this.onError('onInitError'))
     }
 
+    async tokenExchange(token: string, tokenExchangeParams: any): Promise<string> {
+      const { authClient } = this.props;
+      const url = `${authClient.authServerUrl}/realms/${authClient.realm}/protocol/openid-connect/token`;
+
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams({
+          grant_type: 'urn:ietf:params:oauth:grant-type:token-exchange',
+          subject_token: token,
+          ...tokenExchangeParams
+        })
+      });
+  
+      if (!response.ok) {
+        throw new Error('Token exchange failed');
+      }
+  
+      const data = await response.json();
+      return data.access_token;
+    }
+
     onError = (event: AuthClientEvent) => (error?: AuthClientError) => {
       const { onEvent } = this.props
       // Notify Events listener
       onEvent && onEvent(event, error)
     }
 
-    updateState = (event: AuthClientEvent) => () => {
-      const { authClient, onEvent, onTokens, isLoadingCheck } = this.props
+    updateState = (event: AuthClientEvent) => async () => {
+      const { authClient, onEvent, onTokens, isLoadingCheck, tokenExchangeParams } = this.props;
+
       const {
         initialized: prevInitialized,
         isAuthenticated: prevAuthenticated,
@@ -187,6 +219,25 @@ export function createAuthProvider<T extends AuthClient>(
           refreshToken,
           token,
         })
+
+        if (event === 'onAuthRefreshSuccess' && tokenExchangeParams) {
+          try {
+            const newToken = await this.tokenExchange(token, tokenExchangeParams);
+            console.log('Exchanged token:', newToken);
+  
+            // Update state with the new exchanged token
+            this.setState({
+              exchangedToken: newToken,
+            });
+  
+            // Optionally notify token listener with the new exchanged token
+            if (onTokens) {
+              onTokens({ idToken, refreshToken, token: newToken });
+            }
+          } catch (error) {
+            console.error('Token exchange failed:', error);
+          }
+        }
     }
 
     refreshToken = (event: AuthClientEvent) => () => {
@@ -209,7 +260,7 @@ export function createAuthProvider<T extends AuthClient>(
       }
 
       return (
-        <AuthContext.Provider value={{ initialized, authClient }}>
+        <AuthContext.Provider value={{ ...this.state, authClient }}>
           {children}
         </AuthContext.Provider>
       )
