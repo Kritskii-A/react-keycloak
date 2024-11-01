@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.1.0 (2024-11-01)
+
+
+### Bug Fixes
+
+* **TypeScript:** Use ReactKeycloakContextValue from core ([47ff305](https://github.com/Kritskii-A/react-keycloak/commit/47ff30503412a57e90fce33644d3c822320908e7))
+
+
+### chore
+
+* **web:** Remove support for 'keycloak-js' pre-9.0.2 ([d09460a](https://github.com/Kritskii-A/react-keycloak/commit/d09460a62ba7bb4a104eb5ac1df558466cc4b3c0))
+
+
+### Features
+
+* **web:** re-implement withKeycloak HOC ([295a834](https://github.com/Kritskii-A/react-keycloak/commit/295a834c7f3fbe3bd7fb45a73c264b224d2e53ad)), closes [#111](https://github.com/Kritskii-A/react-keycloak/issues/111)
+* **web:** update 'useKeycloak' implementation ([ef19e82](https://github.com/Kritskii-A/react-keycloak/commit/ef19e823b33c03808de696f9e7cbac3478197e0e))
+* **web:** Update TS typings ([92c1e00](https://github.com/Kritskii-A/react-keycloak/commit/92c1e00d3737c3a361a2660b7576212a435921df))
+* **web:** Update TS typings ([ab42e1e](https://github.com/Kritskii-A/react-keycloak/commit/ab42e1e948bb89f17ae2cf5caf1626a56d0485e5))
+
+
+### BREAKING CHANGES
+
+* **web:** Drop support for older KeycloakJS versions
+
+
+
+
+
 # [3.4.0](https://github.com/react-keycloak/react-keycloak/compare/@react-keycloak/web@3.3.0...@react-keycloak/web@3.4.0) (2020-10-21)
 
 

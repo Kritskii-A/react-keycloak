@@ -1,13 +1,13 @@
 {
   "name": "@easy-react-keycloak/web",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "license": "MIT",
   "description": "React bindings for Keycloak javascript adapter",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Kritskii-A/react-keycloak.git"
   },
-   "author": "Aleksandr Kritskii <kritskii-a@bk.ru>",
+  "author": "Aleksandr Kritskii <kritskii-a@bk.ru>",
   "contributors": [
     "Mattia Panzeri <mattia.panzeri93@gmail.com>"
   ],
@@ -31,7 +31,6 @@
   "publishConfig": {
     "access": "public"
   },
-  
   "scripts": {
     "clean": "rimraf lib lib-commonjs",
     "prebuild": "npm run clean",

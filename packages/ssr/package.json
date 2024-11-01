@@ -1,6 +1,6 @@
 {
   "name": "@easy-react-keycloak/ssr",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "license": "MIT",
   "description": "SSR bindings for Keycloak javascript adapter",
   "repository": {
