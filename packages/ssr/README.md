@@ -4,7 +4,7 @@
 
 > SSR bindings for [Keycloak](https://www.keycloak.org/)
 
-[![NPM (scoped)](https://img.shields.io/npm/v/@react-keycloak/ssr?label=npm%20%7C%20ssr)](https://www.npmjs.com/package/@react-keycloak/ssr)
+[![NPM (scoped)](https://img.shields.io/npm/v/@easy-react-keycloak/ssr?label=npm%20%7C%20ssr)](https://www.npmjs.com/package/@easy-react-keycloak/ssr)
 
 [![License](https://img.shields.io/github/license/react-keycloak/react-keycloak.svg)](https://github.com/react-keycloak/react-keycloak/blob/master/LICENSE.md)
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
@@ -42,13 +42,13 @@ React Keycloak requires:
 - `keycloak-js` **9.0.2** or later
 
 ```shell
-yarn add @react-keycloak/ssr
+yarn add @easy-react-keycloak/ssr
 ```
 
 or
 
 ```shell
-npm install --save @react-keycloak/ssr
+npm install --save @easy-react-keycloak/ssr
 ```
 
 ## Getting Started
@@ -65,7 +65,7 @@ Requires NextJS **9** or later
 
 Create the `_app.tsx` file under `pages` folder and wrap your App inside `SSRKeycloakProvider` component and pass `keycloakConfig` and a `TokenPersistor`.
 
-**Note:** `@react-keycloak/ssr` provides a default `TokenPersistor` which works with `cookies` (exported as `ServerPersistors.SSRCookies`).
+**Note:** `@easy-react-keycloak/ssr` provides a default `TokenPersistor` which works with `cookies` (exported as `ServerPersistors.SSRCookies`).
 
 The following examples will be based on that.
 
@@ -75,7 +75,7 @@ import * as React from 'react'
 import type { IncomingMessage } from 'http'
 import type { AppProps, AppContext } from 'next/app'
 
-import { SSRKeycloakProvider, SSRCookies } from '@react-keycloak/ssr'
+import { SSRKeycloakProvider, SSRCookies } from '@easy-react-keycloak/ssr'
 
 const keycloakCfg = {
   realm: '',
@@ -123,7 +123,7 @@ Edit your app `server.js` as follow
 ```js
 ...
 
-import { ExpressCookies, SSRKeycloakProvider } from '@react-keycloak/ssr'
+import { ExpressCookies, SSRKeycloakProvider } from '@easy-react-keycloak/ssr'
 
 // Create a function to retrieve Keycloak configuration parameters -- 'see examples/razzle-app'
 import { getKeycloakConfig } from './utils'
@@ -161,7 +161,7 @@ server
 Edit your `client.js` as follow
 
 ```js
-import { Cookies, SSRKeycloakProvider } from '@react-keycloak/ssr'
+import { Cookies, SSRKeycloakProvider } from '@easy-react-keycloak/ssr'
 
 // Create a function to retrieve Keycloak configuration parameters -- 'see examples/razzle-app'
 import { getKeycloakConfig } from './utils'
@@ -189,7 +189,7 @@ hydrate(
 When a component requires access to `Keycloak`, you can use the `useKeycloak` Hook.
 
 ```js
-import { useKeycloak } from '@react-keycloak/ssr'
+import { useKeycloak } from '@easy-react-keycloak/ssr'
 
 export default () => {
   const { keycloak, initialized } = useKeycloak()
@@ -214,17 +214,17 @@ export default () => {
 
 ## Examples
 
-See inside `examples/nextjs-app` and `examples/razzle-app` folders of [`@react-keycloak/react-keycloak-examples`](https://github.com/react-keycloak/react-keycloak-examples) repository for sample implementations.
+See inside `examples/nextjs-app` and `examples/razzle-app` folders of [`@easy-react-keycloak/react-keycloak-examples`](https://github.com/react-keycloak/react-keycloak-examples) repository for sample implementations.
 
 ## Guides and Articles
 
-- Migration guide for `@react-keycloak/ssr` `v2.x to v3.x` can be found here [MIGRATION.md](https://github.com/react-keycloak/react-keycloak/blob/master/packages/ssr/MIGRATION.md).
+- Migration guide for `@easy-react-keycloak/ssr` `v2.x to v3.x` can be found here [MIGRATION.md](https://github.com/react-keycloak/react-keycloak/blob/master/packages/ssr/MIGRATION.md).
 
 ## Other Resources
 
 ### Securing NextJS API
 
-Whilst `@react-keycloak/ssr` can help you secure the Frontend part of a `NextJS` app if you also want to secure `NextJS`-exposed APIs you can follow the sample in [this issue](https://github.com/react-keycloak/react-keycloak/issues/44#issuecomment-579877959).
+Whilst `@easy-react-keycloak/ssr` can help you secure the Frontend part of a `NextJS` app if you also want to secure `NextJS`-exposed APIs you can follow the sample in [this issue](https://github.com/react-keycloak/react-keycloak/issues/44#issuecomment-579877959).
 
 Thanks to [@webdeb](https://github.com/webdeb) for reporting the issue and helping develop a solution.
 

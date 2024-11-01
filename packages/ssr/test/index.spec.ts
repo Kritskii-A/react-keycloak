@@ -1,3 +1,3 @@
-describe('@react-keycloak/ssr', () => {
+describe('@easy-react-keycloak/ssr', () => {
   it.todo('implement tests')
 })

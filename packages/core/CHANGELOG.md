@@ -40,7 +40,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [3.2.0](https://github.com/react-keycloak/react-keycloak/compare/@react-keycloak/core@3.1.0...@react-keycloak/core@3.2.0) (2020-10-18)
+# [3.2.0](https://github.com/react-keycloak/react-keycloak/compare/@easy-react-keycloak/core@3.1.0...@easy-react-keycloak/core@3.2.0) (2020-10-18)
 
 
 ### Features
@@ -51,7 +51,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [3.1.0](https://github.com/react-keycloak/react-keycloak/compare/@react-keycloak/core@3.0.0...@react-keycloak/core@3.1.0) (2020-10-18)
+# [3.1.0](https://github.com/react-keycloak/react-keycloak/compare/@easy-react-keycloak/core@3.0.0...@easy-react-keycloak/core@3.1.0) (2020-10-18)
 
 
 ### Features
@@ -62,23 +62,23 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [3.0.0](https://github.com/react-keycloak/react-keycloak/compare/@react-keycloak/core@2.2.1...@react-keycloak/core@3.0.0) (2020-10-04)
+# [3.0.0](https://github.com/react-keycloak/react-keycloak/compare/@easy-react-keycloak/core@2.2.1...@easy-react-keycloak/core@3.0.0) (2020-10-04)
 
-**Note:** Version bump only for package @react-keycloak/core
-
-
-
-
-
-## [2.2.1](https://github.com/react-keycloak/react-keycloak/compare/@react-keycloak/core@2.2.0...@react-keycloak/core@2.2.1) (2020-08-21)
-
-**Note:** Version bump only for package @react-keycloak/core
+**Note:** Version bump only for package @easy-react-keycloak/core
 
 
 
 
 
-# [2.2.0](https://github.com/react-keycloak/react-keycloak/compare/@react-keycloak/core@2.1.2...@react-keycloak/core@2.2.0) (2020-07-21)
+## [2.2.1](https://github.com/react-keycloak/react-keycloak/compare/@easy-react-keycloak/core@2.2.0...@easy-react-keycloak/core@2.2.1) (2020-08-21)
+
+**Note:** Version bump only for package @easy-react-keycloak/core
+
+
+
+
+
+# [2.2.0](https://github.com/react-keycloak/react-keycloak/compare/@easy-react-keycloak/core@2.1.2...@easy-react-keycloak/core@2.2.0) (2020-07-21)
 
 
 ### Features
@@ -90,23 +90,23 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [2.1.2](https://github.com/react-keycloak/react-keycloak/compare/@react-keycloak/core@2.1.1...@react-keycloak/core@2.1.2) (2020-07-20)
+## [2.1.2](https://github.com/react-keycloak/react-keycloak/compare/@easy-react-keycloak/core@2.1.1...@easy-react-keycloak/core@2.1.2) (2020-07-20)
 
-**Note:** Version bump only for package @react-keycloak/core
-
-
-
-
-
-## [2.1.1](https://github.com/react-keycloak/react-keycloak/compare/@react-keycloak/core@2.1.0...@react-keycloak/core@2.1.1) (2020-04-09)
-
-**Note:** Version bump only for package @react-keycloak/core
+**Note:** Version bump only for package @easy-react-keycloak/core
 
 
 
 
 
-# [2.1.0](https://github.com/react-keycloak/react-keycloak/compare/@react-keycloak/core@2.0.0...@react-keycloak/core@2.1.0) (2020-04-08)
+## [2.1.1](https://github.com/react-keycloak/react-keycloak/compare/@easy-react-keycloak/core@2.1.0...@easy-react-keycloak/core@2.1.1) (2020-04-09)
+
+**Note:** Version bump only for package @easy-react-keycloak/core
+
+
+
+
+
+# [2.1.0](https://github.com/react-keycloak/react-keycloak/compare/@easy-react-keycloak/core@2.0.0...@easy-react-keycloak/core@2.1.0) (2020-04-08)
 
 
 ### Features
@@ -117,7 +117,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [2.0.0](https://github.com/react-keycloak/react-keycloak/compare/@react-keycloak/core@1.2.1...@react-keycloak/core@2.0.0) (2020-03-30)
+# [2.0.0](https://github.com/react-keycloak/react-keycloak/compare/@easy-react-keycloak/core@1.2.1...@easy-react-keycloak/core@2.0.0) (2020-03-30)
 
 
 ### chore
@@ -138,15 +138,15 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.2.1](https://github.com/react-keycloak/react-keycloak/compare/@react-keycloak/core@1.2.0...@react-keycloak/core@1.2.1) (2020-03-30)
+## [1.2.1](https://github.com/react-keycloak/react-keycloak/compare/@easy-react-keycloak/core@1.2.0...@easy-react-keycloak/core@1.2.1) (2020-03-30)
 
-**Note:** Version bump only for package @react-keycloak/core
-
-
+**Note:** Version bump only for package @easy-react-keycloak/core
 
 
 
-# [1.2.0](https://github.com/react-keycloak/react-keycloak/compare/@react-keycloak/core@1.1.1...@react-keycloak/core@1.2.0) (2020-03-19)
+
+
+# [1.2.0](https://github.com/react-keycloak/react-keycloak/compare/@easy-react-keycloak/core@1.1.1...@easy-react-keycloak/core@1.2.0) (2020-03-19)
 
 
 ### Features
@@ -157,15 +157,15 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.1.1](https://github.com/react-keycloak/react-keycloak/compare/@react-keycloak/core@1.1.0...@react-keycloak/core@1.1.1) (2020-02-22)
+## [1.1.1](https://github.com/react-keycloak/react-keycloak/compare/@easy-react-keycloak/core@1.1.0...@easy-react-keycloak/core@1.1.1) (2020-02-22)
 
-**Note:** Version bump only for package @react-keycloak/core
-
-
+**Note:** Version bump only for package @easy-react-keycloak/core
 
 
 
-# [1.1.0](https://github.com/react-keycloak/react-keycloak/compare/@react-keycloak/core@1.0.1...@react-keycloak/core@1.1.0) (2020-02-19)
+
+
+# [1.1.0](https://github.com/react-keycloak/react-keycloak/compare/@easy-react-keycloak/core@1.0.1...@easy-react-keycloak/core@1.1.0) (2020-02-19)
 
 
 ### Features
@@ -176,33 +176,33 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [1.0.1](https://github.com/react-keycloak/react-keycloak/compare/@react-keycloak/core@1.0.0...@react-keycloak/core@1.0.1) (2020-01-23)
+## [1.0.1](https://github.com/react-keycloak/react-keycloak/compare/@easy-react-keycloak/core@1.0.0...@easy-react-keycloak/core@1.0.1) (2020-01-23)
 
-**Note:** Version bump only for package @react-keycloak/core
-
-
-
-
-
-# [1.0.0-alpha.6](https://github.com/react-keycloak/react-keycloak/compare/@react-keycloak/core@1.0.0-alpha.5...@react-keycloak/core@1.0.0-alpha.6) (2019-12-23)
-
-**Note:** Version bump only for package @react-keycloak/core
+**Note:** Version bump only for package @easy-react-keycloak/core
 
 
 
 
 
-# [1.0.0-alpha.5](https://github.com/react-keycloak/react-keycloak/compare/@react-keycloak/core@1.0.0-alpha.4...@react-keycloak/core@1.0.0-alpha.5) (2019-12-16)
+# [1.0.0-alpha.6](https://github.com/react-keycloak/react-keycloak/compare/@easy-react-keycloak/core@1.0.0-alpha.5...@easy-react-keycloak/core@1.0.0-alpha.6) (2019-12-23)
 
-**Note:** Version bump only for package @react-keycloak/core
-
-
+**Note:** Version bump only for package @easy-react-keycloak/core
 
 
 
-# [1.0.0-alpha.4](https://github.com/react-keycloak/react-keycloak/compare/@react-keycloak/core@1.0.0-alpha.3...@react-keycloak/core@1.0.0-alpha.4) (2019-12-16)
 
-**Note:** Version bump only for package @react-keycloak/core
+
+# [1.0.0-alpha.5](https://github.com/react-keycloak/react-keycloak/compare/@easy-react-keycloak/core@1.0.0-alpha.4...@easy-react-keycloak/core@1.0.0-alpha.5) (2019-12-16)
+
+**Note:** Version bump only for package @easy-react-keycloak/core
+
+
+
+
+
+# [1.0.0-alpha.4](https://github.com/react-keycloak/react-keycloak/compare/@easy-react-keycloak/core@1.0.0-alpha.3...@easy-react-keycloak/core@1.0.0-alpha.4) (2019-12-16)
+
+**Note:** Version bump only for package @easy-react-keycloak/core
 
 
 
@@ -210,7 +210,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # 1.0.0-alpha.3 (2019-12-16)
 
-**Note:** Version bump only for package @react-keycloak/core
+**Note:** Version bump only for package @easy-react-keycloak/core
 
 
 
@@ -218,4 +218,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # 1.0.0-alpha.2 (2019-12-16)
 
-**Note:** Version bump only for package @react-keycloak/core
+**Note:** Version bump only for package @easy-react-keycloak/core

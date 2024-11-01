@@ -5,7 +5,7 @@ import type {
   AuthClientEvent,
   AuthClientError,
   AuthClientTokens,
-} from '@react-keycloak/core'
+} from '@easy-react-keycloak/core'
 import type { KeycloakConfig, KeycloakInstance } from 'keycloak-js'
 import * as React from 'react'
 

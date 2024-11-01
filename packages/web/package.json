@@ -58,11 +58,12 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.9.0",
-    "@easy-react-keycloak/core": "file:../core",
+    "@easy-react-keycloak/core": "^0.1.1",
     "hoist-non-react-statics": "^3.3.2"
   },
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "jsdom"
-  }
+  },
+  "gitHead": "a6ecf9cfb6fdd5689682fd10b8b3496fcf61a55e"
 }
