@@ -14,13 +14,12 @@ jobs:
       - run: npm install
       - run: npm run build
       - name: Publish package to NPM registry
-        env:
-          NPM_AUTH_TOKEN: ${{ secrets.TOKEN_NPM }}
         run: |
-          echo "//registry.npmjs.org/:_authToken=$NPM_AUTH_TOKEN" > ~/.npmrc
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN}}" > ~/.npmrc
           npm whoami
           npm run release
-
+        env:
+          NPM_AUTH_TOKEN: ${{ secrets.TOKEN_NPM }}
       # - name: Create a new GitHub release
       #   run: |
       #     echo ${{ secrets.TOKEN_GITHUB }} > nothing.md
