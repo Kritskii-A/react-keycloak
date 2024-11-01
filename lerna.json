@@ -3,6 +3,13 @@
   "packages": ["packages/core", "packages/web", "packages/ssr"],
   "version": "independent",
   "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "message": "chore: Release new version :rocket:"
+    },
+    "version": {
+      "conventionalCommits": true
+    },
     "bootstrap": {
       "hoist": ["react", "react-dom"],
       "npmClientArgs": ["--no-package-lock"]
