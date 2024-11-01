@@ -15,7 +15,7 @@ jobs:
       - run: npm run build
       - name: Publish package to NPM registry
         run: |
-          echo "//registry.npmjs.org/:_authToken=$NPM_AUTH_TOKEN" > ~/.npmrc
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.TOKEN_NPM }} > ~/.npmrc
           npm whoami
 
           npm run release
